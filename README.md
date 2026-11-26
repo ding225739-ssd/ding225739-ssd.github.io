@@ -1,30 +1,22 @@
-# Chenhao Ding — Academic Homepage
+# Chenhao Ding — academic homepage (redesigned)
 
-A lightweight, responsive GitHub Pages academic site, updated 26 November 2026.
+A minimal, static GitHub Pages website. `index.html` contains its complete CSS so the page maintains its layout even if external stylesheets are missing or cached.
 
-## Deployment
+## Publish
+1. Unzip this archive.
+2. Upload **index.html**, **styles.css**, **.nojekyll**, **README.md**, and the **assets** folder directly to the `main` branch root of `ding225739-ssd/ding225739-ssd.github.io`.
+3. Go to **Settings → Pages → Deploy from a branch → main / (root)**.
+4. Wait for the latest `pages build and deployment` workflow to succeed, then hard-refresh the website.
 
-1. Create public GitHub repository `YOUR_USERNAME.github.io` (or use an existing Pages repository).
-2. Upload the **contents** of this directory (including `index.html`, `styles.css`, `assets/`, and `.nojekyll`) to the repository root.
-3. Open **Settings → Pages → Build and deployment → Deploy from a branch**, choose `main` and `/(root)`, then Save.
-4. Visit `https://YOUR_USERNAME.github.io/` after GitHub Pages publishes the site.
+## Paper images
+- `assets/rada-original.png` is cropped directly from the author's EMNLP 2026 poster.
+- `assets/soba-original.png` is the original Figure 1 from the author's SOBA manuscript.
+- R²A Figure 2 loads directly from the author's public arXiv HTML figure URL; SuLoRA's extracted paper diagram loads from a public figure archive.
+- Two collaborator paper figures load from Jizhou Han's public homepage. These are **external images**, not bundled in this ZIP. They require an internet connection. If remote images are blocked by the hosting provider, replace their `src` URLs in `index.html` with locally exported screenshots from the corresponding papers.
+- For the one collaboration paper without a verified original figure, the page uses a neutral "View original paper" text link instead of a made-up diagram.
 
-## Updating
+## CV
+The PDF/Word under `assets/` are the public one-page CV with R²A as an arXiv preprint, not identified as a CVPR submission.
 
-- Update biography, paper metadata, and links in `index.html`.
-- Edit layout in `styles.css`.
-- Add an authentic personal portrait as `assets/portrait.jpg` when available, and insert an `<img src="assets/portrait.jpg" alt="Chenhao Ding">` element in the About section (with CSS). No fabricated or placeholder portrait is displayed.
-- Replace the public CV files under `assets/` when your CV changes.
-
-## Image credits & notes
-
-- `assets/rada.png`: cropped from the researcher's own EMNLP 2026 poster.
-- `assets/soba.png`: cropped from the researcher's own SOBA TCSVT manuscript, Fig. 1.
-- `assets/sulora.svg`, `assets/analogical.svg`, `assets/prompt-sharing.svg`: original **concept illustrations**, not official paper figures. Replace with official paper teaser figures when available.
-- The two ongoing CVPR 2027 manuscripts are intentionally excluded from public materials for double-blind review; the confidential CV is stored outside this website ZIP.
-- Google Scholar blocks unrestricted automated access. Paper metadata was verified from ACL Anthology, CVF, DBLP, IEEE DOI, and arXiv as of November 26, 2026. Do not interpret this as a live synced publication feed.
-
-### November 26, 2026 update
-- Added *Remember, Replay, Adapt: Learning from Past Experience in Online Vision-and-Language Navigation* (arXiv:2611.19901) to the first-author research list, clearly labeled **arXiv preprint**.
-- Added a compact R²A conceptual illustration and a direct arXiv link; the updated one-page public CV is in `assets/`.
-- No public statement about any CVPR 2027 submission is made.
+## Notes
+Do not upload the ZIP as a single file: upload its **contents**. Original paper figures have been kept as original material without stylistic redrawing.
