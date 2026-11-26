@@ -1,4 +1,4 @@
-# Chenhao Ding — academic homepage (redesigned)
+# Chenhao Ding — academic homepage 
 
 A minimal, static GitHub Pages website. `index.html` contains its complete CSS so the page maintains its layout even if external stylesheets are missing or cached.
 
